@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Página Principal Source 1 :: Antora Docs</title>
-    <meta name="generator" content="Antora 3.0.2">
+    <title>Soluções para controle da Documentação :: Antora Docs</title>
+    <meta name="generator" content="Antora 3.1.1">
     <link rel="stylesheet" href="../../_/css/site.css">
     <script>var uiRootPath = '../../_'</script>
   </head>
@@ -58,7 +58,7 @@
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
   <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="main.html">Página Principal Source 1</a>
+    <a class="nav-link" href="main.html">Soluções para Controle da Documentação</a>
   </li>
 </ul>
   </li>
@@ -99,6 +99,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="main.html">Página Principal Source 1</a></li>
+    <li><a href="main.html">Soluções para Controle da Documentação</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/cardoso-thiago/antora-docs-source1/edit/main/modules/ROOT/pages/main.adoc">Edit this Page</a></div>
@@ -108,10 +109,188 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Página Principal Source 1</h1>
-<div class="paragraph">
-<p>Página principal da doc source 1.</p>
-</div>
+<h1 class="page">Soluções para controle da Documentação</h1>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Solução</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Descrição</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Prós</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Contras</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lançamento das versões Milestone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Retornamos a publicar a documentação durante o lançamento das versões Milestone</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Não modifica o nosso fluxo de trabalho no dia a dia</p>
+</li>
+<li>
+<p>Documentação atualizada com mais velocidade do que o processo atual</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Não resolve completamente o problema, visto que ainda teremos um intervalo de um mês para a atualização da documentação</p>
+</li>
+<li>
+<p>Necessidade de revisão do fluxo de lançamento de versões (possível retorno do controle por tags)</p>
+</li>
+<li>
+<p>Se o controle passar a ser por tags, ainda não está claro se esse controle é possível com o novo modelo de documentação (action de checkout do Github)</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Controle por branch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nesse processo, criamos uma branch com o que não pode entrar na versão e só faremos o merge quando lançarmos a documentação na versão release.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Documentação atualizada diariamente</p>
+</li>
+<li>
+<p>Resolve de fato o problema</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Teremos que ter um controle preciso sobre o que entra ou não nessa branch</p>
+</li>
+<li>
+<p>Necessidade de equalização constante da branch com grandes possibilidades de necessidade de merge durante o período de 3 meses até o lançamento da versão</p>
+</li>
+<li>
+<p>Incremento do processo de geração de versão release com a nova etapa de incorporação dessa branch</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Controle por branch + Lançamento das versões Milestone</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nesse processo, criamos uma branch com o que não pode entrar na versão e faremos o merge quando lançarmos qualquer versão.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Documentação atualizada diariamente</p>
+</li>
+<li>
+<p>Resolve de fato o problema</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Teremos que ter um controle preciso sobre o que entra ou não nessa branch</p>
+</li>
+<li>
+<p>Necessidade de equalização constante da branch com possibilidade de necessidade de merge durante o período de 1 mês até o lançamento da versão</p>
+</li>
+<li>
+<p>Incremento do processo de geração de versão milestone e release com a nova etapa de incorporação dessa branch</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lançamento de versões da documentação por ambiente</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nesse processo, criamos repositórios apartados para a documentação, simulando os ambientes de desenvolvimento.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Não identificado</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Não identificado como esse mecanismo endereçaria o problema</p>
+</li>
+<li>
+<p>Esforço maior para a publicação da versão entre DEV, HOM e PROD</p>
+</li>
+<li>
+<p>Endpoints de acesso a documentação diferentes por ambiente</p>
+</li>
+<li>
+<p>Mudança completa no fluxo de publicação de documentação atual</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Controle na codificação da documentação</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nesse processo, inserimos um condicional em trechos da documentação que não queremos que seja visualizado até que a flag seja atualizada no momento de geração de uma nova versão.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Documentação atualizada diariamente</p>
+</li>
+<li>
+<p>Resolve de fato o problema</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Não está claro se é possível implementar o mesmo mecanismo para a navegação</p>
+</li>
+<li>
+<p>Incremento do processo de geração de versão release com a nova etapa de mudança da flag de versão para que o condicional seja aceito</p>
+</li>
+<li>
+<p>Alteração no nosso fluxo de escrita de documentação no dia a dia, com a necessidade de inclusão da condição quando a alteração se referir a algo novo.</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Controle informativo na documentação</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nesse processo, inserimos uma label com link para o nosso calendário de releases, informando que aquela funcionalidade estará disponível somente na versão especificada na label.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Documentação atualizada diariamente</p>
+</li>
+<li>
+<p>Resolve de fato o problema</p>
+</li>
+<li>
+<p>Pode servir como estímulo para a atualização da versão do QuickCloud, visto que as labels serão visíveis mesmo após o lançamento de versões superiores. Por exemplo, o cliente com a versão 1.4.0 identificando uma funcionalidade interessante para o seu escopo, mas que somente estará ou que já está disponível a partir da versão 1.5.0.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>Ainda pode gerar confusão para os clientes nos casos de versões ainda não geradas</p>
+</li>
+<li>
+<p>Alteração no nosso fluxo de escrita de documentação no dia a dia, com a necessidade de inclusão da label quando a alteração se referir a algo novo.</p>
+</li>
+<li>
+<p>Pode deixar a documentação "poluída".</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 </article>
   </div>
 </main>
@@ -120,7 +299,7 @@
   <p>This page was built using the Antora default UI.</p>
   <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
 </footer>
-<script src="../../_/js/site.js"></script>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
 <script async src="../../_/js/vendor/highlight.js"></script>
   </body>
 </html>
